@@ -1,42 +1,12 @@
+
+
 import java.util.Scanner;
 
 public class Main {
-static Scanner sc = new Scanner(System.in);
-static Car newCar = new Car("1986");
-static CarDoor doorActive = newCar.doors[0];
-static CarWheel wheelActive = newCar.wheels[0];
-
-
-    static void mainMenu(){
-        System.out.println("0 - **************** Меню **************** ");
-        System.out.println("1 - Создать по умолчанию");
-        System.out.println("2 - Создать по параметрам");
-        System.out.println("3 - Получить дверь по индексу");
-        System.out.println("4 - Получить колесо по индексу");
-        System.out.println("5 - Вывести данные о колесе");
-        System.out.println("6 - Вывести данные о двери");
-
-        System.out.println("7 - Открыть дверь");
-        System.out.println("8 - Закрыть дверь");
-        System.out.println("9 - Изменить состояние двери");
-
-        System.out.println("10 - Открыть окно");
-        System.out.println("11 - Зарыть окно");
-        System.out.println("12 - Изменить состояние окна");
-
-        System.out.println("13 - Стереть шину ативного колеса");
-        System.out.println("14 - Добавить пассажира");
-        System.out.println("15 - Убрать пассажира");
-        System.out.println("16 - Убрать всех пассажиров");
-        System.out.println("17 - Снять все колеса");
-        System.out.println("18 - Добавить колес");
-        System.out.println("19 - Задать скорость");
-        System.out.println("20 - Узнать максимальную скорость");
-        System.out.println("21 - Вывести данные о машине");
-        System.out.println("22 - Выход");
-
-
-    }
+    static Scanner sc = new Scanner(System.in);
+    static Car newCar = new Car("1986");
+    static CarDoor doorActive = newCar.doors[0];
+    static CarWheel wheelActive = newCar.wheels[0];
 
     public static void main(String[] args) {
         Menu menu = new Menu();
@@ -74,7 +44,7 @@ static CarWheel wheelActive = newCar.wheels[0];
                 System.out.println("Введите текущюю скорость: ");
                 int curSpeed = sc.nextInt();
 
-                 newCar = new Car(date,engine,maxSpeed,accelerationTime,passCapacity,passCount,curSpeed);
+                newCar = new Car(date, engine, maxSpeed, accelerationTime, passCapacity, passCount, curSpeed);
 
             }
         });
@@ -204,7 +174,7 @@ static CarWheel wheelActive = newCar.wheels[0];
         });
 
         menu.run();
-       // menu.printMenu();
+        // menu.printMenu();
 
 
     }

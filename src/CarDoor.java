@@ -1,9 +1,11 @@
+
+
 public class CarDoor {
-    private Boolean doorState,windowState; //состояние двери и окна false - закрыта
+    private Boolean doorState, windowState; //состояние двери и окна false - закрыта
 
     public CarDoor() {
-       doorState = false;
-       windowState = false;
+        doorState = false;
+        windowState = false;
 
     }
 
@@ -27,11 +29,11 @@ public class CarDoor {
 
     //Окно двери
     public void openWindow() {
-       if (!windowState) toggleWindow(); //открыли
+        if (!windowState) toggleWindow(); //открыли
     }
 
     public void closeWindow() {
-       if (windowState) toggleWindow(); //закрыли
+        if (windowState) toggleWindow(); //закрыли
     }
 
     public void toggleWindow() {

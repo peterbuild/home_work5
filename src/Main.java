@@ -190,6 +190,12 @@ static CarWheel wheelActive = newCar.wheels[0];
                 newCar.setCurentSpeed(currentSpeed);
             }
         });
+        menu.addEntry(new MenuEntry("Максимальная скорость") {
+            @Override
+            public void run() {
+                System.out.println("Макс.скорость - " + newCar.getMaxSpeed());
+            }
+        });
         menu.addEntry(new MenuEntry("Информация о авто") {
             @Override
             public void run() {

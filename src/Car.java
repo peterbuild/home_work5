@@ -134,7 +134,7 @@ public class Car {
     public void show() {
         System.out.println(dateOfManufacture);
         System.out.println(engineType);
-        System.out.println(maxSpeed);
+        System.out.println(getMaxSpeed());
         System.out.println(getCurentSpeed());
         System.out.println(accelerationTime);
         System.out.println(passCapacity);
